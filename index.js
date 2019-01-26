@@ -1,12 +1,5 @@
 let recognizer
 
-async function app() {
- recognizer = speechCommands.create('BROWSER_FFT')
- await recognizer.ensureModelLoaded()
-}
-
-app()
-
 // One frame is ~23ms of audio.
 const NUM_FRAMES = 3
 let examples = []
