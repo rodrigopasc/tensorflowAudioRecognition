@@ -86,6 +86,8 @@ async function app() {
  buildModel()
 }
 
+app()
+
 async function moveSlider(labelTensor) {
  const label = (await labelTensor.data())[0]
  document.getElementById('console').textContent = label
